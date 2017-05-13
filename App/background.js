@@ -18,7 +18,8 @@ chrome.browserAction.onClicked.addListener(function(tab) {
           type: 'popup',
           focused: true,
           left: 1000,
-          width: 300
+          width: 486,
+          height: 500,
           // incognito, top, left, ...
       });
   });
