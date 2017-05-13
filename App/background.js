@@ -34,7 +34,3 @@ chrome.runtime.onMessage.addListener(
   }
 );
 
-function setPassword(password) {
-    // Do something, eg..:
-    console.log(password);
-};
