@@ -76,11 +76,50 @@ function get_sentences_rank(content) {
 // Return the best sentence in a paragraph
 function get_best_sentence(paragraph, sentences_dic) {
 
+	// split the paragraphs into sentences
+	sentences = split_content_to_sentences(paragraph);
+
+	// Ignore short paragraphs
+	if (sentences.length < 2) {
+		return "";
+	}
+
+	// Get the best sentence according to sentences dictionary
+	best_sentence = "";
+	max_value = 0;
+	for (var i = 0; i < sentences.length; i++) {
+		var s = sentences[i];
+		console.log(s);
+		strip_s = format_sentence(s);
+		if (strip_s) {
+			if (sentences_dic[strip_s] > max_value) {
+				max_value = sentences_dic[strip_s];
+				best_sentence = s;
+			}
+		}
+	}
+	return best_sentence;
 }
 
 // Build the summary
 function get_summary(title, content, sentences_dic) {
 
+	// split content into paragraphs
+	var paragraphs = split_content_to_paragraphs(content);
+
+	// add title
+	var summary = [];
+	summary.push(title);
+	summary.push("");
+
+	for (var i = 0; i < paragraphs.length; i++) {
+		var p = paragraphs[i];
+		sentence = get_best_sentence(p, sentences_dic).strip();
+		if (sentence) {
+			summary.push(sentence);
+		}
+	}
+	return ("\n").join(summary);
 }
 
 // Tool to make a 2D array with 0's
@@ -95,6 +134,4 @@ function make2DArray(n) {
 	}
     return arr;
 }
-
-get_sentences_rank("hello. my name is cathy. my name is jenny.");
 
