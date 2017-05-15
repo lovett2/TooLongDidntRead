@@ -20,9 +20,10 @@ function sentences_intersection(sent1, sent2) {
 		return 0;
 	}
 
-	// find common values between sentences
-	var commonValues = s1.filter(function(value) { 
-    						return s2.indexOf(value) > -1; });
+	var commonValues = s1.slice(0)
+    commonValues.filter(function(value) { 
+                                   return s2.indexOf(value) > -1;
+                               });
 
 	// normalize result by avg number of words
 	return commonValues.length / ((s1.length + s2.length)/2);
@@ -48,15 +49,41 @@ function get_sentences_rank(content) {
 	var values = make2DArray(n);
 	for (var i = 0; i < n; i++) {
 		for (var j = 0; j < n; j++) {
-			values[i][j] = sentences_intersection(sentences[i], sentences[j]);
+			if (i != j) {
+				values[i][j] = sentences_intersection(sentences[i], sentences[j]);
+			}
 		}
 	}
 
+	console.log(values);
+
 	// Build the sentences dictionary
 	// The score of a sentence is sum of all its intersection
+	var dict = {};
+	for (var i = 0; i < n; i++) {
+		score = 0;
+		for (var j = 0; j < n; j++) {
+			if (i == j) {
+				continue;
+			}
+			score += values[i][j]
+		}
+		dict[format_sentence(sentences[i])] = score
+	}
+	return dict
+}
+
+// Return the best sentence in a paragraph
+function get_best_sentence(paragraph, sentences_dic) {
 
 }
 
+// Build the summary
+function get_summary(title, content, sentences_dic) {
+
+}
+
+// Tool to make a 2D array with 0's
 function make2DArray(n) {
 	var arr = new Array(n);
 	for (var i = 0; i < n; ++i){
@@ -69,4 +96,5 @@ function make2DArray(n) {
     return arr;
 }
 
+get_sentences_rank("hello. my name is cathy. my name is jenny.");
 
