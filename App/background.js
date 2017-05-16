@@ -2,35 +2,34 @@
 
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
-  // Send a message to the active tab
-  // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  //   var activeTab = tabs[0];
-  //   chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action"});
-  // });
+  
+  //When browser button is pressed use content.js to get selected
+  //text, then pass that text to a pop up window for display.
 
-  chrome.tabs.create({
+
+  //Open new window with short text
+  function displaySummary(shortText){
+	chrome.tabs.create({
       url: chrome.extension.getURL('dialog.html'),
       active: false
-  }, function(tab) {
+  	}, function(tab) {
       // After the tab has been created, open a window to inject the tab
-      chrome.windows.create({
-          tabId: tab.id,
-          type: 'popup',
-          focused: true,
-          left: 1000,
-          width: 486,
-          height: 500,
-          // incognito, top, left, ...
-      });
-  });
-});
-
-// This block is new!
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if( request.message === "open_new_tab" ) {
-      chrome.tabs.create({"url": request.url});
-    }
+		 displayTab = tab.id;
+	 	chrome.windows.create({
+        	  tabId: tab.id,
+          	  type: 'panel',
+          	  focused: true,
+          	  left: 1000,
+          	  width: 500,
+          	  height: 600,
+          	  // incognito, top, left, ...
+      	});	
+  	});
+	//TODO edit dialogue.html with summary text
   }
-);
+
+  //Get text from tab containing selection.
+  chrome.tabs.sendMessage(tab.id, {text: 'summarize'}, displaySummary);
+  
+});
 
