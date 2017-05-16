@@ -8,6 +8,9 @@ chrome.runtime.onMessage.addListener(
 
       // This line is new!
       chrome.runtime.sendMessage({"message": "open_new_tab", "url": firstHref});
-    }
+    }else if(request.message === "summarize") {
+	  //TODO collect text from browser
+	  //TODO summarize collected text
+  	}
   }
 );
