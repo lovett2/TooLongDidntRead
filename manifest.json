@@ -1,9 +1,0 @@
-{
-	"name": "TooLongDidntRead",
-	"version": "1.0",
-	"description": "Summarized selected text",
-	"icons": {},
-	"background" : {},
-	"permissions":[],
-	"browser_action": {}
-}
