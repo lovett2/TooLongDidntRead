@@ -10,7 +10,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   //Open new window with short text
   function displaySummary(shortText){
 	chrome.tabs.create({
-      url: chrome.extension.getURL('dialog.html'),
+      url: chrome.extension.getURL('dialogue.html'),
       active: false
   	}, function(tab) {
       // After the tab has been created, open a window to inject the tab
