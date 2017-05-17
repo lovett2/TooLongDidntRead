@@ -8,18 +8,18 @@ Currently there is only a Chrome implementation of the file extension.
 --------------
 
 ##### 1:
-Clone the repository
+Clone the repository,
 'git clone https://github.com/lovett2/TooLongDidntRead.git'
 
 ##### 2:
-Open Chrome and enter the following into your URL
+Open Chrome and enter the following into your URL,
 'chrome://extensions/'
 
 ##### 3:
-Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'
+Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
 
 ##### 4:
-Navigate to:
+Navigate to,
 '/TooLongDidntRead/Chrome'
 Hit enter.
 
