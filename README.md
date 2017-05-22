@@ -19,6 +19,7 @@ Open Chrome and enter the following into your URL,
 Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
 
 ##### 4:
+Select `Load unpacked extension' button,
 Navigate to,
 '/TooLongDidntRead/Chrome'
 Hit enter.
