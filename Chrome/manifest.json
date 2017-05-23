@@ -1,20 +1,33 @@
 {
   "manifest_version": 2,
   "name": "Too Long; Didnt Read",
-  "version": "0.1",
-  "browser_action": {
-	  "default_icon": "folded-newspaper.png"
-  },
-  "content_scripts": [
-	  {
-	    "matches": [
-	      "<all_urls>"
-	    ],
-	    "js": ["jquery-3.2.1.min.js","content.js"]
-	  }
+	"description": "a sample manifest",
+	"version": "1.0",
+	"permissions": [
+		"storage"
 	],
 	"background": {
-	  "scripts": ["background.js"]
+        "scripts": ["event.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+  	  {
+  	    "matches": [
+  	      "<all_urls>"
+  	    ],
+  	    "js": ["jquery-3.2.1.min.js","content.js"],
+        "run_at": "document_start",
+        "all_frames": true
+  	  }
+  	],
+	"browser_action": {
+    "default_icon": "folded-newspaper.png",
+		"default_popup": "dialogue.html"
 	},
-	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
-}
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+	"permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]}
