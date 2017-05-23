@@ -7,12 +7,22 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
     - Wyatt Reed
 
 ## Table of Contents
-
-- [Requirements and Design](#requirements-and-design)
+- [System Requirements](#system-requirements)
+- [Design](#design)
 - [Installation](#installation)
 - [License](#license)
 
-## Requirements and Design
+## System Requirements
+- App works on the following OSes:
+	- Mac OS X El Capitan (10.11.6)
+	- macOS Sierra Beta (10.12.4)
+	- macOS Sierra
+	- Ubuntu (16.04)
+- When running the Chrome app:
+	- Chrome version 58.0.3029.110 or above
+	- Or Chromium version 58.0.3029.110
+
+## Design
 - Minimal Viable Product
     - Chrome browser extension that allows user to select text and summarize it when the press the browser extension button
     - User first sees highlighted text in popup window, then can summarize it by pressing the button
