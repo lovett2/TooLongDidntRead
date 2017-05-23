@@ -20,6 +20,10 @@
         "all_frames": true
   	  }
   	],
+	"icons":
+	{
+		"128": "folded-newspaper.png"
+	},
 	"browser_action": {
     "default_icon": "folded-newspaper.png",
 		"default_popup": "dialogue.html"
