@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Too Long; Didnt Read",
-	"description": "a sample manifest",
+	"description": "Text summary tool in your browser",
 	"version": "1.0",
 	"permissions": [
 		"storage"
