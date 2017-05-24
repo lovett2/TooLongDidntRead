@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Too Long; Didnt Read",
-	"description": "a sample manifest",
+	"description": "Text summary tool in your browser",
 	"version": "1.0",
 	"permissions": [
 		"storage"
@@ -20,6 +20,10 @@
         "all_frames": true
   	  }
   	],
+	"icons":
+	{
+		"128": "folded-newspaper.png"
+	},
 	"browser_action": {
     "default_icon": "folded-newspaper.png",
 		"default_popup": "dialogue.html"
