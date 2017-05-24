@@ -1,11 +1,11 @@
 # TooLongDidntRead Design Documentation
 
 ## Table of Contents
-- [User Interface](#user-interface)
+- [Architectual Design](#architectual-design)
 - [Functionality](#functionality)
 - [Milestones] (#milestones)
 
-## User Interface
+## Architectual Design
 - dialog.html has the code that controls how the extension window looks. It references other css and javascript files that does most of the functionality.
     - background.js loads the window to display the highlighted text and summarized text.
     - button.js calls takes the highlighted text and sends it to the summarizer function.
@@ -23,3 +23,7 @@
 - If the user clicks on "Change text" without any text highlighted, it will tell the user to highlight the text. If the highlighted text is only one sentence, the summarizer will not return anything.
 - The summarizer only takes into account alphanumeric characters. All other characters are ignored.
 - manifest.json is a required file for the extension. Without it, the extension will not work. This file contains the title, description, version number, reference to content scripts, default icon, and permission settings. Changes to any of these features can be done on this file.
+
+## Milestones
+- Version 1.0
+    - Chrome browser extension that allows user to select text and summarize it when the press the browser extension button. User first sees highlighted text in popup window, then can summarize it by pressing the button.
