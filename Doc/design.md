@@ -2,9 +2,8 @@
 
 ## Table of Contents
 - [User Interface](#user-interface)
-- [Design](#design)
-- [Installation](#installation)
-- [License](#license)
+- [Functionality](#functionality)
+- [Milestones] (#milestones)
 
 ## User Interface
 - dialog.html has the code that controls how the extension window looks. It references other css and javascript files that does most of the functionality.
@@ -15,4 +14,11 @@
     - highlight.js finds the highlighted text
     - style.css defines the style for the window
 - summary.js contains the summarizer functions
-- manifest.json 
+- manifest.json is a file that specifies basic metadata about the extension and also specifies aspects of the extension's functionality.
+
+## Functionality
+- The extension grabs highlighted text on a webpage and once the "Change text" button is clicked, the extension calls a summarizer function and returns the shorter, summarized text.
+- The summarizer first ranks each sentence of the content by calculating the intersection of each sentence with surrounding sentences; in other words, it looks for words that are in common amongs sentences. The score of each sentence is the sum of all of its intersections. Then, for each paragraph, find the best sentence according to the sentence ranks. Finally, it puts together the best sentence from each paragraph into its own paragraph and returns that.
+- The summarizer returns the result almost instantaneously.
+- If the user clicks on "Change text" without any text highlighted, it will tell the user to highlight the text.
+- The summarizer only takes into account alphanumeric characters. All other characters are ignored.
