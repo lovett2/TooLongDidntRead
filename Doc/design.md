@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Architectual Design](#architectual-design)
 - [Functionality](#functionality)
-- [Milestones] (#milestones)
+- [Milestones](#milestones)
 
 ## Architectual Design
 - dialog.html has the code that controls how the extension window looks. It references other css and javascript files that does most of the functionality.
