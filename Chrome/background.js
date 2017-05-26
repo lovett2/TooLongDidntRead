@@ -1,5 +1,21 @@
 // background.js
 
+function scrapeAPI(){
+	var xhr = new XMLHttpRequest();
+	var myURL = "http://boilerpipe-web.appspot.com/extract?output=text&url=https://www.nytimes.com/2017/05/25/world/europe/manchester-bombing-leaks-donald-trump.html";
+
+	xhr.open('GET', myURL, true);
+	xhr.send();
+	xhr.addEventListener("readystatechange", processRequest, false);
+	function processRequest(e){
+  		if(xhr.readyState == 4){
+				var response =xhr.responseText;
+		  		//console.log(response);
+		  		//alert(response);
+  		}
+	}
+	return response;
+}
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
 
@@ -15,20 +31,14 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   	}, function(tab) {
       // After the tab has been created, open a window to inject the tab
 		 displayTab = tab.id;
-	 	chrome.windows.create({
+		 chrome.windows.create({
         	  tabId: tab.id,
           	  type: 'panel',
           	  focused: true,
           	  left: 1000,
           	  width: 500,
           	  height: 600,
-          	  // incognito, top, left, ...
       	});
   	});
-	//TODO edit dialogue.html with summary text
   }
-
-  //Get text from tab containing selection.
-  chrome.tabs.sendMessage(tab.id, {text: 'summarize'}, displaySummary);
-
 });
