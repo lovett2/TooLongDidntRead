@@ -1,9 +1,8 @@
 function onPageDetailsReceived(details) {
 	
 	var curURL = details.url;
-	var xhr = new XMLHttpRequest();
-	//var myURL = "http://boilerpipe-web.appspot.com/extract?output=text&url=https://www.nytimes.com/2017/05/25/world/europe/manchester-bombing-leaks-donald-trump.html";
 	var myURL = "http://boilerpipe-web.appspot.com/extract?output=text&url=";
+	var xhr = new XMLHttpRequest();
 	xhr.open('GET', myURL+curURL, true);
 	xhr.send();
 	xhr.addEventListener("readystatechange", processRequest, false);
