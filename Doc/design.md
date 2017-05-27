@@ -8,7 +8,7 @@
 
 ## Technologies Used
 - Javascript
-- [boiler-pipe](http://boilerpipe-web.appspot.com/): an API that provides algorithms to detect and remove the surplus "clutter" (boilerplate, templates) around the main textual content of a web page.
+- [boilerpipe](http://boilerpipe-web.appspot.com/): an API that provides algorithms to detect and remove the surplus "clutter" (boilerplate, templates) around the main textual content of a web page.
 
 ## Architectual Design
 - dialog.html has the code that controls how the extension window looks. It references other css and javascript files that does most of the functionality.
