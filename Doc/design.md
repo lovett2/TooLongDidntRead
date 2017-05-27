@@ -16,7 +16,7 @@
     - button.js calls takes the highlighted text and sends it to the summarizer function.
     - content.js is the "backend" of the extension
     - event.js is called onload of window popup to execute content.js
-    - highlight.js finds the highlighted text
+    - highlight.js calls boilerpipe API to grab text content of the page
     - style.css defines the style for the window
 - summary.js contains the summarizer functions
 - manifest.json is a file that specifies basic metadata about the extension and also specifies aspects of the extension's functionality.
