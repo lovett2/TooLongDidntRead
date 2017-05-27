@@ -11,8 +11,8 @@ function onPageDetailsReceived(details) {
   		if(xhr.readyState == 4){
   			if (xhr.status == 200) {
 				document.getElementById('summaryText').innerText =  xhr.responseText;
-  			} else if (xhr.status == 403) {
-  				document.getElementById('summaryText').innerText =  "Time out... Try again in a couple of seconds.";
+  			} else {
+  				document.getElementById('summaryText').innerText =  "Oops, something went wrong. Close extension and try again in a few seconds.";
   			}
   		}
 	}
