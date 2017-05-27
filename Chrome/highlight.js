@@ -9,7 +9,11 @@ function onPageDetailsReceived(details) {
 	var response = ""
 	function processRequest(e){
   		if(xhr.readyState == 4){
+  			if (xhr.status == 200) {
 				document.getElementById('summaryText').innerText =  xhr.responseText;
+  			} else if (xhr.status == 403) {
+  				document.getElementById('summaryText').innerText =  "Time out... Try again in a couple of seconds.";
+  			}
   		}
 	}
 }
@@ -19,3 +23,4 @@ window.addEventListener('load', function(evt) {
         eventPage.getPageDetails(onPageDetailsReceived);
     });
 });
+
