@@ -10,6 +10,7 @@
     "scripts": ["event.js"],
     "persistent": false
   },
+  "description": "Summarizes text in browser",
   "content_scripts": [
   	{
 	    "matches": [
