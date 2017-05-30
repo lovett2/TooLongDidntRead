@@ -8,6 +8,7 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 
 ## Table of Contents
 - [System Requirements](#system-requirements)
+- [Technologies Used](#technologies-used)
 - [Design](#design)
 - [Installation](#installation)
 - [License](#license)
@@ -21,6 +22,11 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 - When running the Chrome app:
 	- Chrome version 58.0.3029.110 or above
 	- Or Chromium version 58.0.3029.110
+
+## Technologies Used
+- Javascript, HTML, CSS
+- [Summary tool](https://gist.github.com/shlomibabluki/5473521) adapted from python to javascript
+- [boilerpipe](http://boilerpipe-web.appspot.com/) - page scraper API
 
 ## Design
 - Minimal Viable Product
@@ -40,15 +46,15 @@ Currently there is only a Chrome implementation of the file extension.
 #### Install on Chrome by:
 --------------
 
-##### 1: Clone the repository, 'git clone https://github.com/lovett2/TooLongDidntRead.git'
+1: Clone the repository, 'git clone https://github.com/lovett2/TooLongDidntRead.git'
 
-##### 2: Open Chrome and enter the following into your URL, 'chrome://extensions/'
+2: Open Chrome and enter the following into your URL, 'chrome://extensions/'
 
-##### 3: Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
+3: Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
 
-##### 4: Select `Load unpacked extension' button, navigate to, '/TooLongDidntRead/Chrome' and hit enter.
+4: Select `Load unpacked extension' button, navigate to, '/TooLongDidntRead/Chrome' and hit enter.
 
-##### 5: If you refresh the page the extension should be installed.
+5: If you refresh the page the extension should be installed.
 
 ## License
 
