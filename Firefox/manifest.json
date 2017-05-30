@@ -10,6 +10,10 @@
     "scripts": ["event.js"],
     "persistent": false
   },
+  "description": "Summarizes text in browser",
+  "icons": {
+		  "48": "folded-newspaper.png"
+  },
   "content_scripts": [
   	{
 	    "matches": [
