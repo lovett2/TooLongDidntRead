@@ -22,14 +22,7 @@ browser.browserAction.onClicked.addListener(function(tab) {
           	  left: 1000,
           	  width: 500,
           	  height: 600,
-          	  // incognito, top, left, ...
       	});	
   	});
-	//TODO edit dialogue.html with summary text
-  }
-
-  //Get text from tab containing selection.
-  browser.tabs.sendMessage(tab.id, {text: 'summarize'}, displaySummary);
-  
 });
 
