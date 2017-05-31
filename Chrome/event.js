@@ -1,4 +1,5 @@
 //called onload of the window popup
+//executes content.js and listens for message
 function getPageDetails(callback) {
     chrome.tabs.executeScript(null, { file: 'content.js' });
     chrome.runtime.onMessage.addListener(function(message)  {
