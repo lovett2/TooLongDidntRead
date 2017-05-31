@@ -33,6 +33,8 @@
 - manifest.json is a required file for the extension. Without it, the extension will not work. This file contains the title, description, version number, reference to content scripts, default icon, and permission settings. Changes to any of these features can be done on this file.
 
 ##Known Issues
+- Boilerpipe API grabs all body contents of the page, which includes title, date, author, footnotes, etc. When all of this content is passed into the summarizer, the unnecessary text gets passed in along with it, and sometimes the summarizer will include it in the summary.
+- The summarizer cannot tell the difference between a punctuation period and an end of sentence period. The summarizer separates sentences in a paragraph by looking at periods. For example, "His name is Mr. Young." will be considered to be two sentences "His name is Mr." and "Young". 
 
 ## Milestones
 - Version 1.0
