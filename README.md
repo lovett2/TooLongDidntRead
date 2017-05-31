@@ -65,7 +65,7 @@ Currently there is only a Chrome implementation of the file extension.
 
 2: Open Firefox and enter the following into your URL, 'about:debugging'
 
-3: Click 'Load temporary add-on', navigate to '/TooLongDidntRead/Firefox' and hit enter
+3: Click 'Load temporary add-on', navigate to '/TooLongDidntRead/Firefox' and select the file called 'manifest.json'
 
 4: The extension is now installed
 
