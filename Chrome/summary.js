@@ -3,7 +3,7 @@
 How to use  summarizer:
 
 sentences_dic = get_sentences_rank(content);
-summary = get_summary(title, content, sentences_dic);
+summary = get_summary(content, sentences_dic);
 
 */
 
@@ -108,14 +108,12 @@ function get_best_sentence(paragraph, sentences_dic) {
 }
 
 // Build the summary
-function get_summary(title, content, sentences_dic) {
+function get_summary(content, sentences_dic) {
 
 	// split content into paragraphs
 	var paragraphs = split_content_to_paragraphs(content);
 
-	// add title
 	var summary = [];
-	summary.push(title);
 
 	for (var i = 0; i < paragraphs.length; i++) {
 		var p = paragraphs[i];
