@@ -4,6 +4,7 @@
 - [Technologies Used](#technologies-used)
 - [Architectual Design](#architectual-design)
 - [Functionality](#functionality)
+- [Known Issues](#known-issues)
 - [Milestones](#milestones)
 
 ## Technologies Used
@@ -30,6 +31,8 @@
 - Normally, the API returns the page text instantaneously, however too many calls the API at once can cause a 3 ~ 5 seconds delay due to a limit set by the API. The API will return an error if it is called before the page is fully loaded. API will also return an error if the page isn't fully loaded when it's called. The extension will let user know to wait if API returns one of these errors.
 - The summarizer only takes into account alphanumeric characters. All other characters are ignored.
 - manifest.json is a required file for the extension. Without it, the extension will not work. This file contains the title, description, version number, reference to content scripts, default icon, and permission settings. Changes to any of these features can be done on this file.
+
+##Known Issues
 
 ## Milestones
 - Version 1.0
