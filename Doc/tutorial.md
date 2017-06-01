@@ -1,8 +1,8 @@
 # TooLongDidntRead User Tutorial
 
 ## Table of Contents
-- [How To Install](#how-to-install)
-- [How To Use](#how-to-use)
+- [How To Install](#how-to-install-chrome)
+- [How To Use](#how-to-use-chrome)
 
 ## How To Install (Chrome)
 1. Your computer must have Google Chrome browser installed. You can install [here](https://www.google.com/chrome/browser/desktop/index.html)
@@ -13,7 +13,7 @@
 4. Once its added, you should see the "Too Long; Didn't Read" icon on the top right corner next to the address bar.
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/iconOnBar.png?raw=true)
 
-## How To Use
+## How To Use (Chrome)
 1. Open Chrome and go to chrome://extensions/ Make sure that "Too Long; Didn't Read" is enabled.
 ![Alt text](https://raw.githubusercontent.com/lovett2/TooLongDidntRead/UserTutorial/Chrome/images/ut1.png)
 2. Go find an article which you want a summary of.
