@@ -23,11 +23,6 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 	- Chrome version 58.0.3029.110 or above
 	- Or Chromium version 58.0.3029.110
 
-## Technologies Used
-- Javascript, HTML, CSS
-- [Summary tool](https://gist.github.com/shlomibabluki/5473521) adapted from python to javascript
-- [boilerpipe](http://boilerpipe-web.appspot.com/) - page scraper API
-
 ## Design
 - Minimal Viable Product
     - Chrome browser extension that allows user to select text and summarize it when the press the browser extension button
