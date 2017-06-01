@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [How To Install (Chrome)](#how-to-install-chrome)
-- [How To Use (Chrome)](#how-to-use-chrome)
+- [How To Use](#how-to-use)
 
 ## How To Install (Chrome)
 1. Your computer must have Google Chrome browser installed. You can install [here](https://www.google.com/chrome/browser/desktop/index.html)
@@ -17,9 +17,8 @@
 1. Your computer must have Firefox browser installed. You can install [here](https://www.mozilla.org/en-US/firefox/)
 1. The Firefox version is not available on the Extension store. You will have to download or clone our repo first.
 
-## How To Use (Chrome)
-1. Open Chrome and go to chrome://extensions/ Make sure that "Too Long; Didn't Read" is enabled.
-![Alt text](https://raw.githubusercontent.com/lovett2/TooLongDidntRead/UserTutorial/Chrome/images/ut1.png)
+## How To Use
+1. Open Chrome or Firefox. Make sure the extension is enabled by checking that the icon appears on the top right corner of the browser.
 2. Go find an article which you want a summary of.
 3. Click on the extension button (newspaper image) on the right hand corner.
 ![Alt text](https://raw.githubusercontent.com/lovett2/TooLongDidntRead/UserTutorial/Chrome/images/ut2.png)
@@ -31,6 +30,3 @@
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/ut5.png?raw=true)
 7. If you get this message, no worries- it just means that the page isn't fully loaded yet or there has been too many calls to the text scrapper API. Close the window, wait a few seconds, then try again.
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/ut6.png?raw=true)
-
-## How To Use (Firefox)
-1. Open Firefox
