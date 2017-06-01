@@ -8,7 +8,6 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 
 ## Table of Contents
 - [System Requirements](#system-requirements)
-- [Technologies Used](#technologies-used)
 - [Design](#design)
 - [Installation](#installation)
 - [License](#license)
