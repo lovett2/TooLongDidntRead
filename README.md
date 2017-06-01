@@ -24,15 +24,7 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 
 ## Design
 - Minimal Viable Product
-    - Chrome browser extension that allows user to select text and summarize it when the press the browser extension button
-    - User first sees highlighted text in popup window, then can summarize it by pressing the button
-- Future Versions 
-    - Make the application all browser compatible
-    - Potentially add functionality to export summary to other app (i.e., Twitter, Facebook, email, etc.)
-- Key files for the application
-    - content.js: code that interacts with webpages the browser visits
-    - background.js: can access other APIs, such as the Chrome API, but not the current page
-    - manifest.json: tells Chrome important information about the extension, like its name and which permissions it needs
+You can read about our design [here](github.com/lovett2/TooLongDidntRead/blob/master/Doc/design.md)
 
 ## Installation
 Currently there is only a Chrome implementation of the file extension. 
@@ -40,15 +32,15 @@ Currently there is only a Chrome implementation of the file extension.
 #### Install on Chrome by:
 --------------
 
-##### 1: Clone the repository, 'git clone https://github.com/lovett2/TooLongDidntRead.git'
+1: Clone the repository, 'git clone https://github.com/lovett2/TooLongDidntRead.git'
 
-##### 2: Open Chrome and enter the following into your URL, 'chrome://extensions/'
+2: Open Chrome and enter the following into your URL, 'chrome://extensions/'
 
-##### 3: Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
+3: Ensure Developer mode is checked in the top right. Then select 'Load unpacked extension...'.
 
-##### 4: Select `Load unpacked extension' button, navigate to, '/TooLongDidntRead/Chrome' and hit enter.
+4: Select `Load unpacked extension' button, navigate to, '/TooLongDidntRead/Chrome' and hit enter.
 
-##### 5: If you refresh the page the extension should be installed.
+5: If you refresh the page the extension should be installed.
 
 ## License
 
