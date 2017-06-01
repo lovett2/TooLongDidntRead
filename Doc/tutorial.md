@@ -4,11 +4,14 @@
 - [How To Install](#how-to-install)
 - [How To Use](#how-to-use)
 
-## How To Install
+## How To Install (Chrome)
 1. Your computer must have Google Chrome browser installed. You can install [here](https://www.google.com/chrome/browser/desktop/index.html)
 2. Open Chrome and go to app on the [extension store](https://chrome.google.com/webstore/category/extensions)
 3. Click on "ADD TO CHROME", then "Add extension".
-4. On the top right corner next to the address bar, you should see the "Too Long; Didn't Read" icon.
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/addToChrome.png?raw=true)
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/AddExt.png?raw=true)
+4. Once its added, you should see the "Too Long; Didn't Read" icon on the top right corner next to the address bar.
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/iconOnBar.png?raw=true)
 
 ## How To Use
 1. Open Chrome and go to chrome://extensions/ Make sure that "Too Long; Didn't Read" is enabled.
