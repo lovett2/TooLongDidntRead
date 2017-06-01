@@ -8,7 +8,7 @@
 ## How To Install (Chrome)
 1. Your computer must have Google Chrome browser installed. You can install [here](https://www.google.com/chrome/browser/desktop/index.html)
 2. Open Chrome and go to app on the [extension store.](https://chrome.google.com/webstore/category/extensions)
-3. Click on "ADD TO CHROME".
+3. Near the top right of the window, click on "ADD TO CHROME".
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/addToChrome.png?raw=true)
 4. There will be a popup that confirms the extension you are adding. Click on "Add extension".
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/AddExt.png?raw=true)
