@@ -1,8 +1,10 @@
-# TooLongDidntRead Design Documentation
+# TooLongDidntRead User Tutorial
 
 ## Table of Contents
-- [Technologies Used](#technologies-used)
-- [Architectual Design](#architectual-design)
-- [Functionality](#functionality)
-- [Known Issues](#known-issues)
-- [Milestones](#milestones)
+- [How To Install](#how-to-install)
+- [How To Use](#how-to-use)
+
+## How To Install
+
+## How To Use
+-
