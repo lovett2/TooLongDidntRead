@@ -1,8 +1,8 @@
 # TooLongDidntRead User Tutorial
 
 ## Table of Contents
-- [How To Install](#how-to-install-chrome)
-- [How To Use](#how-to-use-chrome)
+- [How To Install (Chrome)](#how-to-install-chrome)
+- [How To Use (Chrome)](#how-to-use-chrome)
 
 ## How To Install (Chrome)
 1. Your computer must have Google Chrome browser installed. You can install [here](https://www.google.com/chrome/browser/desktop/index.html)
@@ -12,6 +12,10 @@
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/AddExt.png?raw=true)
 4. Once its added, you should see the "Too Long; Didn't Read" icon on the top right corner next to the address bar.
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/iconOnBar.png?raw=true)
+
+## How To Install Firefox
+1. Your computer must have Firefox browser installed. You can install [here](https://www.mozilla.org/en-US/firefox/)
+1. The Firefox version is not available on the Extension store. You will have to download or clone our repo first.
 
 ## How To Use (Chrome)
 1. Open Chrome and go to chrome://extensions/ Make sure that "Too Long; Didn't Read" is enabled.
@@ -27,3 +31,6 @@
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/ut5.png?raw=true)
 7. If you get this message, no worries- it just means that the page isn't fully loaded yet or there has been too many calls to the text scrapper API. Close the window, wait a few seconds, then try again.
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/ut6.png?raw=true)
+
+## How To Use (Firefox)
+1. Open Firefox
