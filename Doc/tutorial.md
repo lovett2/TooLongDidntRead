@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [How To Install (Chrome)](#how-to-install-chrome)
+- [How To Install (Firefox)](#how-to-install-firefox)
 - [How To Use](#how-to-use)
 
 ## How To Install (Chrome)
@@ -13,9 +14,16 @@
 4. Once its added, you should see the "Too Long; Didn't Read" icon on the top right corner next to the address bar.
 ![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Chrome/images/iconOnBar.png?raw=true)
 
-## How To Install Firefox
+## How To Install (Firefox)
 1. Your computer must have Firefox browser installed. You can install [here](https://www.mozilla.org/en-US/firefox/)
-1. The Firefox version is not available on the Extension store. You will have to download or clone our repo first.
+2. The Firefox version is not available on the Extension store. Clone or download the [repo](https://github.com/lovett2/TooLongDidntRead.git)
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Firefox/images/ff0.png?raw=true)
+3. Open Firefox and type 'about:debugging' into URL.
+4. Click 'Load temporary add-on', navigate to '/TooLongDidntRead/Firefox' folder on your computer and select file 'manifest.json'
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Firefox/images/ff1.png?raw=true)
+5. Once it is installed, you should see "Too Long; Didn't Read" under "Extensions". You'll also see the icon on the top right corner of the browser.
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Firefox/images/ff2.png)
+![Alt text](https://github.com/lovett2/TooLongDidntRead/blob/UserTutorial/Firefox/images/ff3.png?raw=true)
 
 ## How To Use
 1. Open Chrome or Firefox. Make sure the extension is enabled by checking that the icon appears on the top right corner of the browser.
