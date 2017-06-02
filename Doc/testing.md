@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Tools Used](#tools-used)
-- [Usage](#Usage)
+- [Usage](#usage)
 - [Updating Tests](#updating-tests)
 - [Adding Test Cases](#adding-test-cases)
 
