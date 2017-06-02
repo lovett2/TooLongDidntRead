@@ -12,7 +12,7 @@ The purpose of these sets of tests are to check desired TLDR strings based off o
 - [Jasmine 2.6.2](https://jasmine.github.io) Behavior-Driven Javascript Testing Tool
 
 ## Usage
-To run tests, open SpecRunner.html and the specs will run automatically. Both the source files and their respective specs are linked in the <head> of the SpecRunner.html.
+To run tests, open `SpecRunner.html` and the specs will run automatically. Both the source files and their respective specs are linked in the <head> of the `SpecRunner.html` .
 
 ## Updating Tests
 
