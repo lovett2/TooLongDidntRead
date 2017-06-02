@@ -6,12 +6,13 @@
 - [Updating Tests](#updating-tests)
 - [Adding Test Cases](#adding-test-cases)
 
+The purpose of these sets of tests are to check desired TLDR strings based off of expected input.
 
 ## Tools Used
 - [Jasmine 2.6.2](https://jasmine.github.io) Behavior-Driven Javascript Testing Tool
 
 ## Usage
-To run test, open SpecRunner.html and run the included specs automatically. Both the source files and their respective specs are linked in the <head> of the SpecRunner.html.
+To run tests, open SpecRunner.html and the specs will run automatically. Both the source files and their respective specs are linked in the <head> of the SpecRunner.html.
 
 ## Updating Tests
 
@@ -19,7 +20,7 @@ If changes are made to the source code, aka either `summary.js` or `button.js`, 
 
 ## Adding Test Cases
 
-If more test cases are to be added, `get_summary.js` under the spec folder will need to be appended. Following general Jasmine usage which can be found on their [website](https://jasmine.github.io), we can test the final TLDR output with the following case:
+If more test cases are to be added, `get_summary.js` under the spec folder will need to be appended. Following general Jasmine usage, which can be found on their [website](https://jasmine.github.io), we can test the final TLDR output with the following case:
 
 ```
   it("Hello World", function() {
@@ -28,4 +29,4 @@ If more test cases are to be added, `get_summary.js` under the spec folder will 
   
 ```
 
-Where the input string goes into `changeText()` and it is tested against the expected output.
+Where the input string goes into `changeText()` and it is tested against the expected output which is returned in list format.
