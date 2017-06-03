@@ -24,28 +24,28 @@ function onPageDetailsReceived(details) {
 
 
 // Called when the user clicks on the browser action.
-browser.browserAction.onClicked.addListener(function(tab) {
-  // alert(tab.url);
-  //Open new window with short text
+// browser.browserAction.onClicked.addListener(function(tab) {
+//   // alert(tab.url);
+//   //Open new window with short text
 
-  function displaySummary(shortText){
-    browser.tabs.create({
-      url: browser.extension.getURL('dialogue.html'),
-      active: false
-    }, function(tab) {
-      // After the tab has been created, open a window to inject the tab
-     displayTab = tab.id;
-     browser.windows.create({
-            tabId: tab.id,
-              type: 'panel',
-              focused: true,
-              left: 1000,
-              width: 500,
-              height: 600,
-      });
-    });
-  }
-});
+//   function displaySummary(shortText){
+//     browser.tabs.create({
+//       url: browser.extension.getURL('dialogue.html'),
+//       active: false
+//     }, function(tab) {
+//       // After the tab has been created, open a window to inject the tab
+//      displayTab = tab.id;
+//      browser.windows.create({
+//             tabId: tab.id,
+//               type: 'panel',
+//               focused: true,
+//               left: 1000,
+//               width: 500,
+//               height: 600,
+//       });
+//     });
+//   }
+// });
 
 browser.browserAction.onClicked.addListener(function(tab) {
   // Send a message to the active tab
@@ -73,7 +73,8 @@ browser.runtime.onMessage.addListener(
           height: 600,
         });
         console.log(request.url);
-        tab.onPageDetailsReceived(request.url);
+        // tab.onPageDetailsReceived(request.url);
+        browser.tabs.sendMessage(tab.id, {"message": "current_url", "url": request.url});
       });
     }
   }
