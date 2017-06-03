@@ -32,9 +32,9 @@
 - manifest.json is a required file for the extension. Without it, the extension will not work. This file contains the title, description, version number, reference to content scripts, default icon, and permission settings. Changes to any of these features can be done on this file.
 
 ## Known Issues
-- Boilerpipe API grabs all body contents of the page, which includes title, date, author, footnotes, etc. When all of this content is passed into the summarizer, the unnecessary text gets passed in along with it, and sometimes the summarizer will include it in the summary.
+- Boilerpipe API grabs all body contents of the page, which includes title, date, author, footnotes, etc. When all of this content is passed into the summarizer, the unnecessary text gets passed in along with it, and sometimes the summarizer will include it in the summary. This is a difficult issue to tackle, because it's difficult to tell what text is the main body and what is not. One potential solution is to find a better API or a text scrapper that only grabs the main content. 
 - Boilerpipe API has a limit on how many times you can call to it. Too many calls will force you to wait a few seconds before calling again.
-- The summarizer cannot tell the difference between a punctuation period and an end of sentence period. The summarizer separates sentences in a paragraph by looking at periods. For example, "His name is Mr. Young." will be considered to be two sentences "His name is Mr." and "Young". 
+- The summarizer cannot tell the difference between a punctuation period and an end of sentence period. "The summarizer separates sentences in a paragraph by looking at periods. For example, "His name is Mr. Young." will be considered to be two sentences "His name is Mr." and "Young". We were able to use regex to look for "Mr." but were not able to implement it for other words like "m.d." and "Ms." that have punctuation periods. In the future, we can resolve this problem by building a dictionary of words that contain punctuation periods. 
 
 ## Milestones
 - Version 1.0 (Minimal Viable Product)
