@@ -25,7 +25,7 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 	- Firefox version 53.0.3 or above
 
 ## Documentation
-- You can read about our design [here](https://github.com/lovett2/TooLongDidntRead/blob/master/Doc/design.md)
+- You can read about our design [here](/Doc/design.md)
 - Check out our tutorial [here](/Doc/tutorial.md)
 - See documents on testing [here](/Doc/testing.md)
 
