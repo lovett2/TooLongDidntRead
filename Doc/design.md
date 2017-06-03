@@ -35,6 +35,7 @@
 - Boilerpipe API grabs all body contents of the page, which includes title, date, author, footnotes, etc. When all of this content is passed into the summarizer, the unnecessary text gets passed in along with it, and sometimes the summarizer will include it in the summary.
 - Boilerpipe API has a limit on how many times you can call to it. Too many calls will force you to wait a few seconds before calling again.
 - The summarizer cannot tell the difference between a punctuation period and an end of sentence period. The summarizer separates sentences in a paragraph by looking at periods. For example, "His name is Mr. Young." will be considered to be two sentences "His name is Mr." and "Young". 
+- The Firefox app can currently grab the URL of the background page and open up a popup, but is having trouble passing that URL to the popup and thus getting the summary. It was working sometimes before, but a majority of the time it was grabbing the extension URL instead of the background page URL.
 
 ## Milestones
 - Version 1.0 (Minimal Viable Product)
