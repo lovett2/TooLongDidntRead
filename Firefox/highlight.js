@@ -1,6 +1,7 @@
 function onPageDetailsReceived(details) {
-	
-	var curURL = details.url;
+	// alert(details.url);
+	alert(details.url);
+	var curURL = details;
 	var myURL = "http://boilerpipe-web.appspot.com/extract?output=text&url=";
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', myURL+curURL, true);
@@ -12,15 +13,19 @@ function onPageDetailsReceived(details) {
   			if (xhr.status == 200) {
 				document.getElementById('summaryText').innerText =  xhr.responseText;
   			} else {
+  				// alert(myURL+curURL);
+  				// alert(xhr.status);
   				document.getElementById('summaryText').innerText =  "Oops, something went wrong. Close extension and try again in a few seconds.";
   			}
   		}
 	}
 }
 
-window.addEventListener('load', function(evt) {
-    browser.runtime.getBackgroundPage(function(eventPage) {
-        eventPage.getPageDetails(onPageDetailsReceived);
-    });
-});
+// window.addEventListener('load', function(evt) {
+//     browser.runtime.getBackgroundPage(function(eventPage) {
+//         eventPage.getPageDetails(onPageDetailsReceived);
+//     });
+
+//     // onPageDetailsReceived(window.location.href);
+// });
 

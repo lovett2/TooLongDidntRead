@@ -7,7 +7,7 @@
 		"storage"
 	],
 	"background": {
-    "scripts": ["event.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "description": "Summarizes text in browser",
@@ -25,8 +25,7 @@
 		"128": "folded-newspaper.png"
 	},
 	"browser_action": {
-    "default_icon": "folded-newspaper.png",
-		"default_popup": "dialogue.html"
+    "default_icon": "folded-newspaper.png"
 	},
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
