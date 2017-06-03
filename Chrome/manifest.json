@@ -7,6 +7,7 @@
 		"storage"
 	],
 	"background": {
+<<<<<<< HEAD
         "scripts": ["event.js"],
         "persistent": false
     },
@@ -23,6 +24,23 @@
 	"icons":
 	{
 		"128": "images/folded-newspaper.png"
+=======
+    "scripts": ["event.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+  	{
+	    "matches": [
+	      "<all_urls>"
+	    ],
+	    "js": ["jquery-3.2.1.min.js", "content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+  	}
+  ],
+	"icons": {
+		"128": "folded-newspaper.png"
+>>>>>>> firefox
 	},
 	"browser_action": {
     "default_icon": "images/folded-newspaper.png",
@@ -35,4 +53,6 @@
 		"http://boilerpipe-web.appspot.com/",
         "http://*/*",
         "https://*/*"
-    ]}
+  ]
+}
+

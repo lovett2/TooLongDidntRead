@@ -1,9 +1,7 @@
-// content
+// content.js
 
-//needed info for getting the highlighted text.
+//passes the page title and url upon load
 chrome.runtime.sendMessage({
     'title': document.title,
-    'url': window.location.href,
-    'summary': window.getSelection().toString()
+    'url': window.location.href
 });
-

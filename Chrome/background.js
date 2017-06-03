@@ -1,12 +1,7 @@
 // background.js
 
-
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
-
-  //When browser button is pressed use content.js to get selected
-  //text, then pass that text to a pop up window for display.
-
 
   //Open new window with short text
   function displaySummary(shortText){

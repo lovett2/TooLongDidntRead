@@ -21,6 +21,8 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 - When running the Chrome app:
 	- Chrome version 58.0.3029.110 or above
 	- Or Chromium version 58.0.3029.110
+- When running the Firefox app:
+	- Firefox version 53.0.3 or above
 
 ## Design
 - Minimal Viable Product
@@ -41,6 +43,17 @@ Currently there is only a Chrome implementation of the file extension.
 4: Select `Load unpacked extension' button, navigate to, '/TooLongDidntRead/Chrome' and hit enter.
 
 5: If you refresh the page the extension should be installed.
+
+#### Install on Firefox by:
+--------------
+
+1: Clone the repository, 'git clone https://github.com/lovett2/TooLongDidntRead.git'
+
+2: Open Firefox and enter the following into your URL, 'about:debugging'
+
+3: Click 'Load temporary add-on', navigate to '/TooLongDidntRead/Firefox' and select the file called 'manifest.json'
+
+4: The extension is now installed
 
 ## License
 
