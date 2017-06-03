@@ -8,7 +8,7 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 
 ## Table of Contents
 - [System Requirements](#system-requirements)
-- [Design](#design)
+- [Documentation](#documentation)
 - [Installation](#installation)
 - [License](#license)
 
@@ -24,9 +24,10 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 - When running the Firefox app:
 	- Firefox version 53.0.3 or above
 
-## Design
-- Minimal Viable Product
-You can read about our design [here](github.com/lovett2/TooLongDidntRead/blob/master/Doc/design.md)
+## Documentation
+- You can read about our design [here](github.com/lovett2/TooLongDidntRead/blob/master/Doc/design.md)
+- Check out our tutorial [here](github.com/lovett2/TooLongDidntRead/blob/master/Doc/tutorial.md)
+- See documents on testing [here](github.com/lovett2/TooLongDidntRead/blob/master/Doc/testing.md)
 
 ## Installation
 Currently there is only a Chrome implementation of the file extension. 
