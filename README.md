@@ -26,8 +26,8 @@ TooLongDidntRead is a publicly maintained browser extension that allows you to s
 
 ## Documentation
 - You can read about our design [here](https://github.com/lovett2/TooLongDidntRead/blob/master/Doc/design.md)
-- Check out our tutorial [here](https://github.com/lovett2/TooLongDidntRead/blob/master/Doc/tutorial.md)
-- See documents on testing [here](https://github.com/lovett2/TooLongDidntRead/blob/master/Doc/testing.md)
+- Check out our tutorial [here](/Doc/tutorial.md)
+- See documents on testing [here](/Doc/testing.md)
 
 ## Installation
 Currently there is only a Chrome implementation of the file extension. 
