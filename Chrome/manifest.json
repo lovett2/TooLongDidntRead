@@ -24,7 +24,7 @@
 		"128": "folded-newspaper.png"
 	},
 	"browser_action": {
-    "default_icon": "folded-newspaper.png",
+    "default_icon": "images/folded-newspaper.png",
 		"default_popup": "dialogue.html"
 	},
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
